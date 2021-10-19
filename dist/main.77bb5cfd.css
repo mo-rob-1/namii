@@ -921,6 +921,7 @@ body {
   width: 100%;
 }
 .popup__submit-btn {
+  cursor: pointer;
   background: white;
   border: 0;
   padding-left: 1rem;
