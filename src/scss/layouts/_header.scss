@@ -3,7 +3,7 @@
 .header {
     &__container {
         padding: 1rem;
-        @include responsive(laptop) {
+        @include responsive(tablet) {
             padding-left: 3rem;
             padding-right: 3rem;
         }
@@ -13,6 +13,8 @@
         }
     }
     &__col-wrapper {
+        display: flex;
+        justify-content: space-between;
         @include responsive(laptop) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -29,31 +31,43 @@
         }
     }
     &__logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include responsive(laptop) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            order: 2;
+        }
     }
     &__logo-wrapper a {
         text-decoration: none;
     }
     &__nav {
         margin-top: 2rem;
+        display: none;
+        @include responsive(laptop) {
+            display: block;
+        }
     }
     &__nav-list {
-        display: flex;
         padding: 0;
+        text-align: center;
+        margin-top: 3rem;
+        @include responsive(laptop) {
+        margin-top: 0;
+        display: flex;
         align-items: center;
         justify-content: center;
+        }
     }
     &__nav-list-item {
         list-style-type: none;
-        margin-right: .8rem;
+        margin-bottom: 2rem;
         @include responsive(tablet) {
-            margin-right: 3rem;
             font-size: 1rem;
         }
         @include responsive(laptop) {
             margin-right: 4rem;
+            margin-bottom: 0;
         }
         @include responsive(laptop-lg) {
             margin-right: 5rem;
@@ -62,4 +76,24 @@
     &__nav-list-item:nth-child(4) {
         margin-right: 0rem;
     }
+    &__hamburger-wrapper {
+        display: flex;
+        @include responsive(laptop) {
+            visibility: hidden;
+            order: 1;
+        }
+    }
 }
+
+.hamburger-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .hamburger-inner {
+    width: 30px;
+    height: 2px;
+    background-color: #222;
+    margin: 6px 0;
+  }

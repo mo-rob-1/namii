@@ -4,9 +4,9 @@
     &__container {
         text-align: center;
         padding-top: 3rem;
-        padding-bottom: 3rem;
-        @include responsive(laptop) {
-            padding-bottom: 6rem;
-        }
+        padding-bottom: 6rem;
+        // @include responsive(laptop) {
+        //     padding-bottom: 6rem;
+        // }
     }
 }

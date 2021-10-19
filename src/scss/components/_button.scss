@@ -2,14 +2,41 @@
 
 .header {
     &__btn-wrapper {
+        display: none;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 3rem;
         @include responsive(laptop) {
+            display: block;
             text-align: end;
+            order: 2;
         }
     }
     &__btn {
+        background-color: $pink;
+        text-align: center;
+        color: #fff;
+        font-family: $primaryFont;
+        text-transform: uppercase;
+        padding: .6rem 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+        @include responsive(laptop) {
+            position: relative;
+            top: .6rem;
+        }
+    }
+    &__btn-wrapper-mobile {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        @include responsive(laptop) {
+            display: none;
+            text-align: end;
+            order: 2;
+        }
+    }
+    &__btn-mobile {
         background-color: $pink;
         text-align: center;
         color: #fff;
