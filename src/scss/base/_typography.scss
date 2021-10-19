@@ -1,0 +1,162 @@
+/**
+* Basic typography style for copy text
+*/
+@use '../abstracts' as *;
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('/fonts/GTFAdieuTRIAL-Regular.woff2') format('woff2'),
+         url('/fonts/GTFAdieuTRIAL-Regular.woff') format('woff'),
+         url('/fonts/GTFAdieuTRIAL-Light.otf') format('opentype');
+  }
+
+.header {
+    &__logo-wrapper {
+        font-size: 2rem;
+    }
+    &__logo-link {
+        font-family: $primaryFont;
+        text-transform: uppercase;
+        color: $green;
+        font-weight: bold;
+    }
+    &__nav-list-item {
+        font-family: $primaryFont;
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    &__nav-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: $green;
+        font-family: 'MyWebFont';
+        letter-spacing: 1px;
+    }
+    &__btn {
+        cursor: pointer;
+        font-family: 'MyWebFont';
+        letter-spacing: 1px;
+    }
+    &__btn-wrapper a {
+        font-family: 'MyWebFont';
+    }
+}
+.popup {
+    &__title {
+        margin-top: 0;
+        color: white;
+        font-family: 'MyWebFont';
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    &__sub-txt {
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'MyWebFont';
+        margin-top: 3rem;
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+    &__submit-btn {
+        font-family: 'MyWebFont';
+    }
+}
+.welcome {
+    &__title-one {
+        font-family: 'MyWebFont';
+        color: $green;
+        font-weight: lighter;
+        margin-bottom: 0;
+        position: relative;
+        right: 3rem;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        @include responsive(laptop) {
+            font-size: 4rem;
+        }
+    }
+    &__title-two {
+        font-family: $secondaryFont;
+        letter-spacing: 2px;
+        color: $green;
+        margin-top: 0;
+        position: relative;
+        left: 4rem;
+        font-size: 3.8rem;
+        letter-spacing: 5px;
+        @include responsive(laptop) {
+            font-size: 5rem;
+            left: 8.5rem;
+        }
+    }
+    &__link {
+        font-family: 'MyWebFont';
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $green;
+        border-bottom: 2px solid $green;
+        letter-spacing: 1px;
+    }
+}
+.image-gallery {
+    &__title {
+        color: #fff;
+        font-family: 'MyWebFont';
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 0;
+        letter-spacing: 4px;
+        @include responsive(laptop) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.footer {
+    &__logo-link {
+        font-family: 'MyWebFont';
+        text-transform: uppercase;
+        color: $green;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    &__address {
+        font-family: 'MyWebFont';
+        color: $green;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__contact-wrapper {
+        font-family: 'MyWebFont';
+    }
+    &__number,
+    &__email {
+        text-decoration: none;
+        color: $green;
+    }
+    &__nav-list {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        font-family: $primaryFont;
+        display: grid;
+        gap: 1rem;
+    }
+    &__nav-list-item {
+        list-style-type: none;
+    }
+    &__link {
+        text-decoration: none;
+        color: $green;
+        border-bottom: 2px solid $green;
+        font-family: 'MyWebFont';
+    }
+    &__follow-us {
+        font-family: 'MyWebFont';
+        color: $green;
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,65 @@
+@use '../abstracts' as *;
+
+.header {
+    &__container {
+        padding: 1rem;
+        @include responsive(laptop) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        @include responsive(laptop-lg) {
+            margin: 0 auto;
+            max-width: 1700px;
+        }
+    }
+    &__col-wrapper {
+        @include responsive(laptop) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+    &__logo-wrapper {
+        text-align: center;
+        height: 60px;
+        @include responsive(laptop) {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo-wrapper a {
+        text-decoration: none;
+    }
+    &__nav {
+        margin-top: 2rem;
+    }
+    &__nav-list {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    &__nav-list-item {
+        list-style-type: none;
+        margin-right: .8rem;
+        @include responsive(tablet) {
+            margin-right: 3rem;
+            font-size: 1rem;
+        }
+        @include responsive(laptop) {
+            margin-right: 4rem;
+        }
+        @include responsive(laptop-lg) {
+            margin-right: 5rem;
+        }
+    }
+    &__nav-list-item:nth-child(4) {
+        margin-right: 0rem;
+    }
+}

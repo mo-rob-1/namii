@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.welcome {
+    &__container {
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include responsive(laptop) {
+            padding-bottom: 6rem;
+        }
+    }
+}

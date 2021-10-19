@@ -1,0 +1,87 @@
+@use '../abstracts' as *;
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    @include responsive(tablet) {
+        padding: 3rem;
+    }
+    &__line {
+        height: 3px;
+        background-color: $green;
+        width: 100%;
+        position: relative;
+        top: 3rem;
+        @include responsive(laptop) {
+            margin-top: 2rem !important;
+            margin: 0 auto;
+            max-width: 920px;
+            width: 90%;
+        }
+        @include responsive(laptop-lg) {
+            max-width: 1400px;
+        }
+    }
+    &__container {
+        padding: 6rem 1rem;
+        @include responsive(laptop) {
+            margin: 0 auto;
+            max-width: 920px;
+        }
+        @include responsive(laptop-lg) {
+            max-width: 1400px;
+        }
+    }
+    &__container-wrapper {
+        display: grid;
+        gap: 2rem;
+        @include responsive(tablet) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+        @include responsive(laptop-lg) {
+            gap: 8rem;
+        }
+    }
+    &__contact-wrapper {
+        margin-top: 2rem;
+    }
+    &__socials-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon-wrapper {
+        margin-right: 1rem;
+    }
+    &__icon-wrapper:nth-child(2) {
+        margin-right: 0;
+    }
+    &__item-4 {
+        @include responsive(laptop) {
+            display: flex;
+        }
+    }
+    &__follow-us {
+        @include responsive(laptop) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.8rem;
+        }
+    }
+    &__logo-wrapper {
+        height: 40px;
+    }
+    &__item-1,
+    &__item-3 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.fa-instagram,
+.fa-facebook-f {
+    color: $green;
+}
