@@ -126,6 +126,17 @@ var button = document.querySelector("#hamburger");
 button.addEventListener("click", function (e) {
   document.querySelector(".show-nav").classList.toggle("header__nav");
 });
+
+function updateMenuButton() {
+  $('.js-menu-button').find('.menu-icon').toggleClass('is-active');
+}
+
+$(document).ready(function () {
+  $('.js-menu-button').click(function (e) {
+    e.preventDefault();
+    updateMenuButton();
+  });
+});
 },{}],"js/script.js":[function(require,module,exports) {
 "use strict";
 
@@ -158,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64029" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65475" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
