@@ -13,6 +13,7 @@
         }
     }
     &__btn {
+        transition: 0.3s;
         background-color: $pink;
         text-align: center;
         color: #fff;
@@ -26,9 +27,12 @@
             top: .6rem;
         }
     }
+    &__btn:hover {
+        background-color: $green;
+    }
     &__btn-wrapper-mobile {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: 3rem;
         @include responsive(laptop) {
             display: none;

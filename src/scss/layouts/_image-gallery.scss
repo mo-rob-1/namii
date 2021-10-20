@@ -41,3 +41,17 @@
         }
     }
 }
+
+.brush-graphic {
+    background-image: url("../images/brush-graphic.png");
+    padding: 1rem;
+    background-position: bottom right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70rem;
+    transform: rotate(360deg);
+    display: inline-block;
+}

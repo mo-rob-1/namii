@@ -9,4 +9,12 @@
         //     padding-bottom: 6rem;
         // }
     }
+    &__xin-chao {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        @include responsive(tablet) {
+            padding: 3rem;
+            width: 700px;
+        }
+    }
 }

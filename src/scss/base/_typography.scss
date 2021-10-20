@@ -102,12 +102,19 @@
         }
     }
     &__link {
+        transition: 0.3s;
         font-family: 'MyWebFont';
         text-transform: uppercase;
+        text-decoration: none;
         font-weight: bold;
         color: $green;
         border-bottom: 2px solid $green;
         letter-spacing: 1px;
+        padding-bottom: .1rem;
+    }
+    &__link:hover {
+        color: $pink;
+        border-bottom: 2px solid $pink;
     }
 }
 .image-gallery {
@@ -147,6 +154,10 @@
         text-decoration: none;
         color: $green;
     }
+    &__number:hover,
+    &__email:hover {
+        color: $pink;
+    }
     &__nav-list {
         margin-top: 0;
         margin-bottom: 0;
@@ -163,6 +174,10 @@
         color: $green;
         border-bottom: 2px solid $green;
         font-family: 'MyWebFont';
+    }
+    &__link:hover {
+        color: $pink;
+        border-bottom: none;
     }
     &__follow-us {
         font-family: 'MyWebFont';

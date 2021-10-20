@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Gooey-PC\\Documents\\frontend-boilerplate-main\\namii\\src\\fonts\\GTFAdieuTRIAL-Regular.woff2":[["GTFAdieuTRIAL-Regular.2dee9e97.woff2","fonts/GTFAdieuTRIAL-Regular.woff2"],"fonts/GTFAdieuTRIAL-Regular.woff2"],"C:\\Users\\Gooey-PC\\Documents\\frontend-boilerplate-main\\namii\\src\\fonts\\GTFAdieuTRIAL-Regular.woff":[["GTFAdieuTRIAL-Regular.d278b39a.woff","fonts/GTFAdieuTRIAL-Regular.woff"],"fonts/GTFAdieuTRIAL-Regular.woff"],"C:\\Users\\Gooey-PC\\Documents\\frontend-boilerplate-main\\namii\\src\\fonts\\GTFAdieuTRIAL-Light.otf":[["GTFAdieuTRIAL-Light.a680c0ef.otf","fonts/GTFAdieuTRIAL-Light.otf"],"fonts/GTFAdieuTRIAL-Light.otf"],"./..\\images\\rice-dish.jpeg":[["rice-dish.4ab6f4c5.jpeg","images/rice-dish.jpeg"],"images/rice-dish.jpeg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Gooey-PC\\Documents\\frontend-boilerplate-main\\namii\\src\\fonts\\GTFAdieuTRIAL-Regular.woff2":[["GTFAdieuTRIAL-Regular.2dee9e97.woff2","fonts/GTFAdieuTRIAL-Regular.woff2"],"fonts/GTFAdieuTRIAL-Regular.woff2"],"C:\\Users\\Gooey-PC\\Documents\\frontend-boilerplate-main\\namii\\src\\fonts\\GTFAdieuTRIAL-Regular.woff":[["GTFAdieuTRIAL-Regular.d278b39a.woff","fonts/GTFAdieuTRIAL-Regular.woff"],"fonts/GTFAdieuTRIAL-Regular.woff"],"C:\\Users\\Gooey-PC\\Documents\\frontend-boilerplate-main\\namii\\src\\fonts\\GTFAdieuTRIAL-Light.otf":[["GTFAdieuTRIAL-Light.a680c0ef.otf","fonts/GTFAdieuTRIAL-Light.otf"],"fonts/GTFAdieuTRIAL-Light.otf"],"./..\\images\\rice-dish.jpeg":[["rice-dish.4ab6f4c5.jpeg","images/rice-dish.jpeg"],"images/rice-dish.jpeg"],"./..\\images\\flower-graphic-one.png":[["flower-graphic-one.71c95f83.png","images/flower-graphic-one.png"],"images/flower-graphic-one.png"],"./..\\images\\flower-graphic-two.png":[["flower-graphic-two.267f0520.png","images/flower-graphic-two.png"],"images/flower-graphic-two.png"],"./..\\images\\brush-graphic.png":[["brush-graphic.b27a4872.png","images/brush-graphic.png"],"images/brush-graphic.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62649" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51854" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

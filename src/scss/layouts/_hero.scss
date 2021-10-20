@@ -6,10 +6,6 @@
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    // @include responsive(laptop) {
-    //     padding-left: 6rem;
-    //     padding-right: 6rem;
-    // }
     @include responsive(laptop-lg) {
         margin: 0 auto;
         max-width: 1700px;
@@ -32,4 +28,29 @@
             height: 620px;
         }
     }
+}
+
+.flower-graphic-one {
+    background-image: url("../images/flower-graphic-one.png");
+    padding: 1rem;
+    background-position: top right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8rem;
+    z-index: -9999;
+}
+.flower-graphic-two {
+    background-image: url("../images/flower-graphic-two.png");
+    padding: 1rem;
+    background-position: bottom left; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40rem;
+    z-index: -9999;
 }
