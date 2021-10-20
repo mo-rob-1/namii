@@ -5,13 +5,20 @@
     &__container {
         padding-top: 4rem;
         padding-bottom: 4rem;
+        @include responsive(tablet) {
+            padding-bottom: 0;
+        }
+        @include responsive(laptop) {
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+        }
     }
     &__grid-wrapper{
         display: grid;
         gap: 2rem;
         padding: 1rem;
         @include responsive(tablet) {
-            padding: 3rem;
+            padding: .8rem 3rem 3rem 3rem;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
         }
@@ -43,6 +50,7 @@
 }
 
 .brush-graphic {
+    display: none;
     background-image: url("../images/brush-graphic.png");
     padding: 1rem;
     background-position: bottom right; /* Center the image */
@@ -53,5 +61,7 @@
     right: 0;
     top: 70rem;
     transform: rotate(360deg);
-    display: inline-block;
+    @include responsive(laptop) {
+        display: none;
+    }
 }

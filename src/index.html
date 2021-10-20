@@ -18,6 +18,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+
+    <div class="popup" data-aos="fade-up" data-aos-duration="1000">
+      <span class="cross" id="closeItem">&#10005;</span>
+      <div class="popup__title-wrapper">
+        <h2 class="popup__title">Fancy 20% Off Your First Namii Visit?</h2>
+      </div>
+      <p class="popup__sub-txt">Join Our Mailing List</p>
+      <div class="popup__input-wrapper">
+        <input class="popup__input" type="email" placeholder="Email">
+        <button class="popup__submit-btn" type="button">Submit</button>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header__container">
 
@@ -58,9 +71,10 @@
 
     <main>
       <div class="flower-graphic-one" data-aos="fade-up" data-aos-duration="1000"></div>
-      <section class="hero">
+      <section class="hero" data-aos="fade-up" data-aos-duration="1000">
         <div class="hero__container">
-          <div class="popup" data-aos="fade-up" data-aos-duration="1000">
+          <!-- <div class="popup" data-aos="fade-up" data-aos-duration="1000">
+            <span id="closeItem">x</span>
             <div class="popup__title-wrapper">
               <h2 class="popup__title">Fancy 20% Off Your First Namii Visit?</h2>
             </div>
@@ -69,16 +83,14 @@
               <input class="popup__input" type="email" placeholder="Email">
               <button class="popup__submit-btn" type="button">Submit</button>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <div class="flower-graphic-two" data-aos="fade-up" data-aos-duration="1000"></div>
 
-      <section class="welcome" data-aos="fade-up" data-aos-duration="2000">
+      <section class="welcome" data-aos="fade-up" data-aos-duration="1000">
         <div class="welcome__container">
           <div class="welcome__title-wrapper">
-            <!-- <h1 class="welcome__title-one">XIN CHAO</h1>
-            <h1 class="welcome__title-two">WELCOME</h1> -->
             <img class="welcome__xin-chao" src="images/xin-chao-welcome.svg">
           </div>
           <a href="#" class="welcome__link">Book Your Table</a>
@@ -91,18 +103,18 @@
 
       <section class="image-gallery">
         <div class="image-gallery__container">
-          <h2 class="image-gallery__title" data-aos="fade-up" data-aos-duration="2000">Follow Us</h2>
+          <h2 class="image-gallery__title" data-aos="fade-up" data-aos-duration="1000">Follow Us</h2>
           <div class="image-gallery__grid-wrapper">
-            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="2000">
+            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000">
               <img class="image-gallery__item-img" src="images/winter-spritz.jpeg" alt="Winter Spritz" />
             </div>
-            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <img class="image-gallery__item-img" src="images/tables.jpeg" alt="Tables" />
             </div>
-            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
+            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <img class="image-gallery__item-img" src="images/georgia-mcdermott-vegemite.jpeg" alt="Georgia McDermott Vegemite" />
             </div>
-            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
+            <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <img class="image-gallery__item-img" src="images/cocktails.png" alt="Cocktails" />
             </div>
           </div>
@@ -114,12 +126,12 @@
       <div class="footer__line"></div>
       <div class="footer__container">
         <div class="footer__container-wrapper">
-        <div class="footer__item footer__item-1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="footer__item footer__item-1" data-aos="fade-up" data-aos-duration="1000">
           <div class="footer__logo-wrapper">
-            <a href="index.html"><img class="footer__logo-wrapper" src="images/logo.svg" alt="logo"></a>
+            <a href="index.html"><img class="footer__logo-wrapper" src="images/logo-footer.png" alt="logo"></a>
           </div>
         </div>
-        <div class="footer__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+        <div class="footer__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <div class="footer__address-wrapper">
             <p class="footer__address">New York Street<br>Manchester M1 4BD</p>
           </div>
@@ -128,7 +140,7 @@
             <a class="footer__email" href="mailto:info@namii.co.uk">info@namii.co.uk</a>
           </div>
         </div>
-        <div class="footer__item footer__item-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
+        <div class="footer__item footer__item-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
           <nav class="footer__nav">
             <ul class="footer__nav-list">
               <li class="footer__nav-list-item"><a href="#" class="footer__link">About Us</a></li>
@@ -137,7 +149,7 @@
             </ul>
           </nav>
         </div>
-        <div class="footer__item footer__item-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
+        <div class="footer__item footer__item-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
           <p class="footer__follow-us">Follow Us</p>
           <div class="footer__socials-wrapper">
             <div class="footer__icon-wrapper">
@@ -151,6 +163,8 @@
       </div>
       </div>
     </footer>
+
+    <div class="flower-graphic-footer" data-aos="fade-up" data-aos-duration="1000"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>

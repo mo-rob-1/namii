@@ -90,3 +90,24 @@
 .fa-facebook-f:hover {
     color: $pink;
 }
+
+.flower-graphic-footer {
+    background-image: url("../images/flower-graphic-one.png");
+    padding: 1rem;
+    background-position: bottom right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    z-index: -9999;
+    display: none;
+    @include responsive(tablet) {
+        display: block;
+        top: 100rem;
+    }
+    @include responsive(laptop) {
+        top: 120rem;
+    }
+}

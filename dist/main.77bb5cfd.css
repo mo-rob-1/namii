@@ -430,7 +430,7 @@ body {
   font-size: 3rem;
   letter-spacing: 3px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .welcome__title-one {
     margin-right: 3rem;
   }
@@ -448,7 +448,7 @@ body {
   font-size: 3.8rem;
   letter-spacing: 5px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .welcome__title-two {
     margin-left: 18rem;
   }
@@ -542,7 +542,7 @@ body {
 .header__container {
   padding: 1rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .header__container {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -617,7 +617,7 @@ body {
   list-style-type: none;
   margin-bottom: 2rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .header__nav-list-item {
     font-size: 1rem;
   }
@@ -697,6 +697,10 @@ body {
   top: 0.6375em;
 }
 
+.menu-icon.is-active span:nth-child(3) {
+  top: 0.6rem !important;
+}
+
 .menu-icon span:nth-child(4) {
   top: 1.2em;
 }
@@ -721,10 +725,60 @@ body {
   transform: rotate(-45deg);
 }
 
+#example-wrapper {
+  height: 2000px;
+  width: 50vw;
+  text-align: center;
+}
+
+.modal-content-wrapper {
+  position: fixed;
+  bottom: -475px;
+  right: 5px;
+  color: white;
+  background: #107387;
+  font-size: 18px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  transition: 1s;
+  border: 3px solid white;
+}
+
+.modal-content-wrapper.show {
+  bottom: 5px;
+  transition: 1s;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.modal-content-wrapper .btn {
+  color: #107387;
+}
+
+.modal-content-wrapper #title {
+  background-color: unset;
+  text-align: center;
+}
+
+span#closeItem {
+  top: -5px;
+  right: 0;
+  position: absolute;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#closeItem:hover {
+  color: grey;
+}
+
 .hero {
   padding: 1rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .hero {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -747,7 +801,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .hero__container {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -798,7 +852,7 @@ body {
   padding: 1rem;
   margin-bottom: 2rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .welcome__xin-chao {
     padding: 3rem;
     width: 700px;
@@ -812,14 +866,25 @@ body {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+@media only screen and (min-width: 768px) {
+  .image-gallery__container {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .image-gallery__container {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
 .image-gallery__grid-wrapper {
   display: grid;
   gap: 2rem;
   padding: 1rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .image-gallery__grid-wrapper {
-    padding: 3rem;
+    padding: 0.8rem 3rem 3rem 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
   }
@@ -858,6 +923,7 @@ body {
 }
 
 .brush-graphic {
+  display: none;
   background-image: url("/brush-graphic.b27a4872.png");
   padding: 1rem;
   background-position: bottom right;
@@ -870,14 +936,18 @@ body {
   right: 0;
   top: 70rem;
   transform: rotate(360deg);
-  display: inline-block;
+}
+@media only screen and (min-width: 1024px) {
+  .brush-graphic {
+    display: none;
+  }
 }
 
 .footer {
   text-align: center;
   padding: 1rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .footer {
     padding: 3rem;
   }
@@ -920,7 +990,7 @@ body {
   display: grid;
   gap: 3rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .footer__container-wrapper {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -975,6 +1045,33 @@ body {
 .fa-instagram:hover,
 .fa-facebook-f:hover {
   color: #AE123E;
+}
+
+.flower-graphic-footer {
+  background-image: url("/flower-graphic-one.71c95f83.png");
+  padding: 1rem;
+  background-position: bottom right;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  height: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  z-index: -9999;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .flower-graphic-footer {
+    display: block;
+    top: 100rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .flower-graphic-footer {
+    top: 120rem;
+  }
 }
 
 .header__btn-wrapper {
@@ -1040,6 +1137,13 @@ body {
 }
 
 .popup {
+  position: fixed;
+  align-items: center;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  display: block;
   background-color: #003835;
   padding: 2rem 2rem;
   text-align: center;
@@ -1084,7 +1188,7 @@ body {
   gap: 0.6rem;
   margin-top: 1.6rem;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .popup__input-wrapper {
     display: grid;
     grid-template-columns: 5fr 1fr;
@@ -1095,6 +1199,12 @@ body {
 ::placeholder {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
+}
+
+.cross {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

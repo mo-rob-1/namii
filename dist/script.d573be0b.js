@@ -137,6 +137,9 @@ $(document).ready(function () {
     updateMenuButton();
   });
 });
+$("#closeItem").click(function () {
+  $(".popup").hide().delay("slow");
+});
 },{}],"js/script.js":[function(require,module,exports) {
 "use strict";
 
@@ -169,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51854" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59744" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

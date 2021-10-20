@@ -25,3 +25,7 @@ $(document).ready(function() {
 
 });
 
+
+$("#closeItem").click(function(){
+  $(".popup").hide().delay("slow");
+});
