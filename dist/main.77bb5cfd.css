@@ -918,25 +918,6 @@ span#closeItem:hover {
   }
 }
 
-.brush-graphic {
-  transform: rotate(260deg) !important;
-  display: none;
-  background-image: url("/brush-graphic.b27a4872.png");
-  padding: 1rem;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  height: 400px;
-  position: absolute;
-  left: 95rem;
-  right: 0;
-  top: 68rem;
-}
-@media only screen and (min-width: 1024px) {
-  .brush-graphic {
-    display: block;
-  }
-}
-
 .footer {
   text-align: center;
   padding: 1rem;
