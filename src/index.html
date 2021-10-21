@@ -15,6 +15,10 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+  />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
@@ -61,13 +65,14 @@
             <li class="header__nav-list-item"><a href="#" class="header__nav-link">Contact Us</a></li>
             <li class="header__nav-list-item"><a href="#" class="header__nav-link">Charity Partners</a></li>
           </ul>
+          <div class="header__btn-wrapper-mobile">
+            <a class="header__btn-mobile">Book a table</a>
+          </div>
         </nav>
       </div>
     </header>
 
-    <div class="header__btn-wrapper-mobile">
-      <a class="header__btn-mobile">Book a table</a>
-    </div>
+
 
     <main>
       <div class="flower-graphic-one" data-aos="fade-up" data-aos-duration="1000"></div>
@@ -97,29 +102,36 @@
         </div>
       </section>
 
-      <div>
-      <div class="brush-graphic" data-aos="fade-up" data-aos-duration="1000"></div>
-      </div>
-
       <section class="image-gallery">
         <div class="image-gallery__container">
           <h2 class="image-gallery__title" data-aos="fade-up" data-aos-duration="1000">Follow Us</h2>
           <div class="image-gallery__grid-wrapper">
             <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000">
-              <img class="image-gallery__item-img" src="images/winter-spritz.jpeg" alt="Winter Spritz" />
+              <a data-fancybox="gallery" href="images/winter-spritz.jpeg">
+                <img class="image-gallery__item-img" src="images/winter-spritz.jpeg" alt="Winter Spritz" />
+              </a>
             </div>
             <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <img class="image-gallery__item-img" src="images/tables.jpeg" alt="Tables" />
+              <a data-fancybox="gallery" href="images/tables.jpeg">
+                <img class="image-gallery__item-img" src="images/tables.jpeg" alt="Tables" />
+              </a>
             </div>
             <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-              <img class="image-gallery__item-img" src="images/georgia-mcdermott-vegemite.jpeg" alt="Georgia McDermott Vegemite" />
+              <a data-fancybox="gallery" href="images/georgia-mcdermott-vegemite.jpeg">
+                <img class="image-gallery__item-img" src="images/georgia-mcdermott-vegemite.jpeg" alt="Georgia McDermott Vegemite" />
+              </a>
             </div>
             <div class="image-gallery__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <img class="image-gallery__item-img" src="images/cocktails.png" alt="Cocktails" />
+              <a data-fancybox="gallery" href="images/cocktails.png">
+                <img class="image-gallery__item-img" src="images/cocktails.png" alt="Cocktails" />
+              </a>
             </div>
           </div>
         </div>
       </section>
+  
+        <div class="brush-graphic" data-aos="fade-up" data-aos-duration="1000"></div>
+
     </main>
 
     <footer class="footer">
@@ -167,6 +179,7 @@
     <div class="flower-graphic-footer" data-aos="fade-up" data-aos-duration="1000"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

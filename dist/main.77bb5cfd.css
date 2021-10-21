@@ -817,9 +817,7 @@ span#closeItem:hover {
   background-image: url("/flower-graphic-one.71c95f83.png");
   padding: 1rem;
   background-position: top right;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   height: 400px;
   position: absolute;
   left: 0;
@@ -832,9 +830,7 @@ span#closeItem:hover {
   background-image: url("/flower-graphic-two.267f0520.png");
   padding: 1rem;
   background-position: bottom left;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   height: 400px;
   position: absolute;
   left: 0;
@@ -923,23 +919,21 @@ span#closeItem:hover {
 }
 
 .brush-graphic {
+  transform: rotate(260deg) !important;
   display: none;
   background-image: url("/brush-graphic.b27a4872.png");
   padding: 1rem;
   background-position: bottom right;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   height: 400px;
   position: absolute;
-  left: 0;
+  left: 95rem;
   right: 0;
-  top: 70rem;
-  transform: rotate(360deg);
+  top: 68rem;
 }
 @media only screen and (min-width: 1024px) {
   .brush-graphic {
-    display: none;
+    display: block;
   }
 }
 
@@ -1108,6 +1102,7 @@ span#closeItem:hover {
   background-color: #003835;
 }
 .header__btn-wrapper-mobile {
+  display: block;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;

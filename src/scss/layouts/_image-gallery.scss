@@ -50,18 +50,18 @@
 }
 
 .brush-graphic {
+    transform: rotate(260deg) !important;
     display: none;
     background-image: url("../images/brush-graphic.png");
     padding: 1rem;
-    background-position: bottom right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: bottom right; 
+    background-repeat: no-repeat; 
     height: 400px;
     position: absolute;
-    left: 0;
+    left: 95rem;
     right: 0;
-    top: 70rem;
-    transform: rotate(360deg);
+    top: 68rem;
     @include responsive(laptop) {
-        display: none;
+        display: block;
     }
 }
